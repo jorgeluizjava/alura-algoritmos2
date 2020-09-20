@@ -23,7 +23,7 @@ public class IntercalaDoisArraysJaOrdenados {
                 new Nota("ana", 10)
         };
 
-        Intercalador intercalador = new Intercalador();
+        IntercaladorDeArraysJaOrdenados intercalador = new IntercaladorDeArraysJaOrdenados();
         Nota[] notasIntercaladas = intercalador.intercala(notas1, notas2);
 
         assertThat(notasIntercaladas.length, is(equalTo(9)));
@@ -37,7 +37,6 @@ public class IntercalaDoisArraysJaOrdenados {
         assertThat(notasIntercaladas[6].getValor(), is(equalTo(9d)));
         assertThat(notasIntercaladas[7].getValor(), is(equalTo(9.3d)));
         assertThat(notasIntercaladas[8].getValor(), is(equalTo(10d)));
-
     }
 
 }
